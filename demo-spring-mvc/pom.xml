@@ -14,7 +14,25 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-  </dependencies>
+ 
+   <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId> spring-context</artifactId>
+        <version>5.1.0.BUILD-SNAPSHOT</version>
+    </dependency>
+</dependencies>
+<repositories>
+    <repository>
+        <id>spring-snapshots</id>
+        <name>Spring Snapshots</name>
+        <url>https://repo.spring.io/libs-snapshot</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+</repositories>
+	
+  
   <build>
     <finalName>demo-spring-mvc</finalName>
   </build>
